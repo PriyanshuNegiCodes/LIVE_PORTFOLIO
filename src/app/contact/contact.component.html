@@ -1,73 +1,93 @@
-<section id="contact" class="contact">
-    <div class="container">
 
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
+<mat-card class="contact">
+    <mat-card-header>
+      <mat-card-title><h1 class="line">Contact</h1> <div class="line" id="orangeBlock"></div></mat-card-title>
+      <mat-card-subtitle>Contact Me</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p></p>
+      
+    </mat-card-content>
+    <mat-card-actions>
 
-      <div class="row mt-2">
+    </mat-card-actions>
+  </mat-card>
 
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>A108 Adam Street, New York, NY 535022</p>
+<!-- <section id="contact" class="contact">
+
+        <div class="container">
+      
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>Contact Me</p>
           </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      
+          <div class="row mt-2">
+      
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="info-box">
+                <mat-icon class="info-box-icon">location_on</mat-icon>
+                <h3>My Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+      
+            <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+              <div class="info-box">
+                <mat-icon class="info-box-icon">share</mat-icon>
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                  <a href="#" class="twitter"><mat-icon class="social-icon">twitter</mat-icon></a>
+                  <a href="#" class="facebook"><mat-icon class="social-icon">facebook</mat-icon></a>
+                  <a href="#" class="instagram"><mat-icon class="social-icon">instagram</mat-icon></a>
+                  <a href="#" class="google-plus"><mat-icon class="social-icon">skype</mat-icon></a>
+                  <a href="#" class="linkedin"><mat-icon class="social-icon">linkedin</mat-icon></a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-md-6 mt-4 d-flex align-items-stretch">
+              <div class="info-box">
+                <mat-icon class="info-box-icon">email</mat-icon>
+                <h3>Email Me</h3>
+                <p>contact@example.com</p>
+              </div>
+            </div>
+            <div class="col-md-6 mt-4 d-flex align-items-stretch">
+              <div class="info-box">
+                <mat-icon class="info-box-icon">phone</mat-icon>
+                <h3>Call Me</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p>contact@example.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p>+1 5589 55488 55</p>
-          </div>
-        </div>
-      </div>
-
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
-
+          <form class="mat-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-md-6 mat-form-field">
+                <mat-label>Your Name</mat-label>
+                <input matInput formControlName="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 mat-form-field">
+                <mat-label>Your Email</mat-label>
+                <input matInput formControlName="email" type="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="mat-form-field mt-3">
+              <mat-label>Subject</mat-label>
+              <input matInput formControlName="subject" placeholder="Subject" required>
+            </div>
+            <div class="mat-form-field mt-3">
+              <mat-label>Message</mat-label>
+              <textarea matInput formControlName="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading" *ngIf="loading">Loading</div>
+              <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+              <div class="sent-message" *ngIf="successMessage">{{ successMessage }}</div>
+            </div>
+            <div class="text-center"><button mat-raised-button type="submit">Send Message</button></div>
+          </form>
+          
     </div>
-  </section>
+  </section> -->

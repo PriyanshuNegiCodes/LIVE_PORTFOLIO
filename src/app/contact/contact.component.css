@@ -1,6 +1,34 @@
 .contact{
-    padding-top: 64px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 80vw;
 }
+mat-card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+h1{
+    color: whitesmoke;
+}
+
+mat-card-subtitle{
+    color: azure;
+    font-size: 50px;
+    font-weight: 800;
+}
+.line {
+    display: inline-block;
+  }
+  #orangeBlock{
+    margin-left: 8px;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 5px;
+    background-color: #F44336;
+  }
+/* 
 .contact .info-box {
 
     color: #444444;
@@ -156,4 +184,4 @@
     }
   }
 
-  
+   */
