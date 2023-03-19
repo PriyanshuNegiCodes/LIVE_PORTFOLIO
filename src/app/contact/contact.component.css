@@ -1,5 +1,5 @@
 .contact{
-    margin-top: 20%;
+    margin-top: 4%;
     margin-left: 10%;
     margin-right: 10%;
     max-width: 80vw;
@@ -17,6 +17,7 @@ mat-card-subtitle{
     color: azure;
     font-size: 50px;
     font-weight: 800;
+    margin-bottom: 30px;
 }
 .line {
     display: inline-block;
@@ -26,8 +27,28 @@ mat-card-subtitle{
     margin-bottom: 5px;
     width: 100px;
     height: 5px;
-    background-color: #F44336;
+    background-color: #7b1fa2;
   }
+
+  .Data-title{
+    width: 40%;
+  }
+.addressHead{
+  font-size: 30px;
+}
+.addressData {
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* .address:hover .example-header-image i {
+  
+  
+} */
+
+
+
 /* 
 .contact .info-box {
 
