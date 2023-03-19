@@ -33,21 +33,25 @@ mat-card-subtitle{
   .Data-title{
     width: 40%;
   }
-.addressHead{
+.Data-title mat-card-title{
   font-size: 30px;
 }
-.addressData {
+.Data-title mat-card-subtitle{
   margin-top: 4px;
   font-size: 16px;
   font-weight: 300;
 }
 
-/* .address:hover .example-header-image i {
+.socialIcons:hover i {
   
-  
-} */
+  color:  #7b1fa2;
+}
 
-
+@media only screen and (max-width: 767px) {
+  .Data-title {
+    width: 100%;
+  }
+}
 
 /* 
 .contact .info-box {
