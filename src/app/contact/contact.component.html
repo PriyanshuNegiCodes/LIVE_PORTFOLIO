@@ -2,16 +2,16 @@
 <mat-card class="contact">
     <mat-card-header>
       <mat-card-title><h1 class="line">Contact</h1> <div class="line" id="orangeBlock"></div></mat-card-title>
-      <mat-card-subtitle>Contact Me</mat-card-subtitle>
+      <!-- <mat-card-subtitle>Contact Me</mat-card-subtitle> -->
     </mat-card-header>
     <mat-card-content>
         <mat-card class="Data-title">
           <mat-card-header >
-            <div mat-card-avatar class="example-header-image">
+            <div mat-card-avatar class="example-header-image" >
               <i class='fas fa-map-marker-alt' style='font-size:48px; color: #7b1fa2;'></i>
            </div>
-            <mat-card-title class="addressHead">My Address </mat-card-title>
-            <mat-card-subtitle class="addressData">A-29, Dayal Bagh, Faridabad, 121009</mat-card-subtitle>
+            <mat-card-title >My Address </mat-card-title>
+            <mat-card-subtitle >A-29, Dayal Bagh, Faridabad, 121009</mat-card-subtitle>
           </mat-card-header>
         </mat-card>
 
@@ -30,6 +30,26 @@
             </mat-card-subtitle>
           </mat-card-header>
         </mat-card>
+
+        <mat-card class="Data-title">
+          <mat-card-header >
+            <div mat-card-avatar class="example-header-image" >
+              <i class="fa fa-envelope" style="font-size:48px; color: #7b1fa2;"></i>
+            </div>
+            <mat-card-title>Email Address </mat-card-title>
+            <mat-card-subtitle >priyanshunegi2398@gmail.com</mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+
+        <mat-card class="Data-title">
+          <mat-card-header >
+            <div mat-card-avatar class="example-header-image" >
+              <i class="fa fa-phone" style="font-size:48px; color: #7b1fa2;"></i>
+            </div>
+            <mat-card-title>Contact Number </mat-card-title>
+            <mat-card-subtitle >+91-9891967027</mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
       
     </mat-card-content>
     <mat-card-actions>
@@ -37,81 +57,3 @@
     </mat-card-actions>
   </mat-card>
 
-<!-- <section id="contact" class="contact">
-
-        <div class="container">
-      
-          <div class="section-title">
-            <h2>Contact</h2>
-            <p>Contact Me</p>
-          </div>
-      
-          <div class="row mt-2">
-      
-            <div class="col-md-6 d-flex align-items-stretch">
-              <div class="info-box">
-                <mat-icon class="info-box-icon">location_on</mat-icon>
-                <h3>My Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div>
-      
-            <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-              <div class="info-box">
-                <mat-icon class="info-box-icon">share</mat-icon>
-                <h3>Social Profiles</h3>
-                <div class="social-links">
-                  <a href="#" class="twitter"><mat-icon class="social-icon">twitter</mat-icon></a>
-                  <a href="#" class="facebook"><mat-icon class="social-icon">facebook</mat-icon></a>
-                  <a href="#" class="instagram"><mat-icon class="social-icon">instagram</mat-icon></a>
-                  <a href="#" class="google-plus"><mat-icon class="social-icon">skype</mat-icon></a>
-                  <a href="#" class="linkedin"><mat-icon class="social-icon">linkedin</mat-icon></a>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col-md-6 mt-4 d-flex align-items-stretch">
-              <div class="info-box">
-                <mat-icon class="info-box-icon">email</mat-icon>
-                <h3>Email Me</h3>
-                <p>contact@example.com</p>
-              </div>
-            </div>
-            <div class="col-md-6 mt-4 d-flex align-items-stretch">
-              <div class="info-box">
-                <mat-icon class="info-box-icon">phone</mat-icon>
-                <h3>Call Me</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div>
-          </div>
-
-          <form class="mat-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <div class="row">
-              <div class="col-md-6 mat-form-field">
-                <mat-label>Your Name</mat-label>
-                <input matInput formControlName="name" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6 mat-form-field">
-                <mat-label>Your Email</mat-label>
-                <input matInput formControlName="email" type="email" placeholder="Your Email" required>
-              </div>
-            </div>
-            <div class="mat-form-field mt-3">
-              <mat-label>Subject</mat-label>
-              <input matInput formControlName="subject" placeholder="Subject" required>
-            </div>
-            <div class="mat-form-field mt-3">
-              <mat-label>Message</mat-label>
-              <textarea matInput formControlName="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading" *ngIf="loading">Loading</div>
-              <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
-              <div class="sent-message" *ngIf="successMessage">{{ successMessage }}</div>
-            </div>
-            <div class="text-center"><button mat-raised-button type="submit">Send Message</button></div>
-          </form>
-          
-    </div>
-  </section> -->
