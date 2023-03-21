@@ -83,20 +83,24 @@ mat-card-subtitle{
 
   .eachSkill{
     width: 180px;
-    margin-left: 20x;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .eachSkill img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
   }
 
   @media only screen and (max-width: 767px) {
     .information {
       flex-direction: column;
-      margin: 0 auto;
+      margin: auto;
       width: 80%;
       text-align: center;
+      margin-bottom: 20px;
     }
     .myBio{
       flex-direction: column;
