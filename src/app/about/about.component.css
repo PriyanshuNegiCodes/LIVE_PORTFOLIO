@@ -53,6 +53,7 @@ mat-card-subtitle{
   .mySelf{
     font-family: Great Vibes;
     font-size: 20px;
+    letter-spacing: 2px;
   }
 
   .myBio{
@@ -111,10 +112,12 @@ mat-card-subtitle{
       width: 100%;
     }
     .skills{
-      margin-left: 50px;
+      margin-left: 28px;
+      display: flex;
+      flex-direction: row;
     }
     .eachSkill{
-      width: 90px;
+      width: 80px;
       align-items: center;
       margin-right: 40px;
     }
