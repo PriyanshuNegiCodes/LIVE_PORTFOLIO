@@ -16,8 +16,10 @@
             <div class="mySelf">
                 As an electrical engineering graduate turned full-stack web developer, my ambition is to merge my technical expertise with my creative drive to build impactful and innovative digital solutions.
             </div>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolor provident hic atque sed maxime assumenda aliquam sint, quos omnis possimus ipsum deserunt libero eos labore ea quo itaque nemo.
+            <div class="skills">
+                <mat-chip-listbox class="chipss" aria-label="My Skills" *ngFor="let skill of skillArray">
+                    <mat-chip-option>{{skill}}</mat-chip-option>
+                  </mat-chip-listbox>
             </div>
             </div>
         </div>
