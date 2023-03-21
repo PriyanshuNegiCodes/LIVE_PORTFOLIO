@@ -21,11 +21,12 @@ mat-card-subtitle{
 }
 .line {
     display: inline-block;
+
   }
   #orangeBlock{
     margin-left: 8px;
     margin-bottom: 5px;
-    width: 100px;
+    width: 226px;
     height: 5px;
     background-color: #7b1fa2;
   }
