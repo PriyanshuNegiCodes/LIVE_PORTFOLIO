@@ -46,19 +46,11 @@ mat-card-subtitle{
   h1{
 
     font-weight: bolder;
-    /* color: #18d26e; */
+
   }
   .mySelf{
     font-family: Great Vibes;
     font-size: 20px;
-  }
-  .skills{
-    display: flex;
-    flex-wrap: wrap;
-    
-  }
-  .chipss{
-    margin-right: 10px;
   }
 
   .myBio{
@@ -72,6 +64,10 @@ mat-card-subtitle{
     margin-top: 1%;
   }
 
+  .skills{
+    margin:auto
+  }
+
   .sideCharArrow{
     font-size:30px; margin-right: 4px; color: #7b1fa2;
     font-weight: bolder;
@@ -83,5 +79,10 @@ mat-card-subtitle{
       width: 80%;
       text-align: center;
     }
+    .myBio{
+      flex-direction: column;
+      width: 100%;
+    }
+    
   }
 

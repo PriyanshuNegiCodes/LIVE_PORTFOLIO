@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { mySkills } from '../mySkills';
 
 @Component({
   selector: 'app-about',
@@ -6,9 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
- skillArray:any= ["Angular", "Angular Material", "JSON", "Axios", "TypeScript", "AngularJS", "GitHub", "Microsoft Visual Studio Code", "IntelliJ IDEA", "MySQL", "Databse", "Java", "Core Java", "JavaScript", "Java Database Connectivity (JDBC)", "HTML", "Cascading Style Sheets (CSS)"]
 
-
+skillArray:any=mySkills.skills;
  getAge() {
   const birthDate = new Date('1998-06-23');
   const currentDate = new Date();
