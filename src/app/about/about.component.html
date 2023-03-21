@@ -41,11 +41,12 @@
                     <mat-card-content><span class="sideCharArrow">&#8618;</span><span class="field">Location: </span>Faridabad, Haryana</mat-card-content>
                 </mat-card>
             </div>
-            
-            <div class="skills">
-
             </div>
-
+        </div>
+        <div class="skills">
+            <div class="eachSkill" *ngFor="let skill of skillArray">
+                <img src="../../assets/{{skill.name}}.png" alt="Skill Image">
+                <h4>{{skill.name}}</h4>
             </div>
         </div>
 

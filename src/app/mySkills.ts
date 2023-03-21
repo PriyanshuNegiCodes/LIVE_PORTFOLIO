@@ -10,9 +10,9 @@ export const mySkills = {
       { id: 7, name: "TypeScript" },
       { id: 8, name: "RESTAPI" },
       { id: 9, name: "ANGULAR" },
-      { id: 10, name: "ANGULAR MATERIAL" },
+      { id: 10, name: "MATERIALUI" },
       { id: 11, name: "GITHUB" },
-      { id: 12, name: "VISUAL STUDIO CODE" },
+      { id: 12, name: "VSC" },
       { id: 13, name: "INTELLIJ" }
     ]
   };
