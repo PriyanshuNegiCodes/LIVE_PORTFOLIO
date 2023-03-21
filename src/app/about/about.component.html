@@ -16,12 +16,17 @@
             <div class="mySelf">
                 As an electrical engineering graduate turned full-stack web developer, my ambition is to merge my technical expertise with my creative drive to build impactful and innovative digital solutions.
             </div>
-            <div class="skills">
-                <mat-chip-listbox class="chipss" aria-label="My Skills" *ngFor="let skill of skillArray">
-                    <mat-chip-option>{{skill}}</mat-chip-option>
-                  </mat-chip-listbox>
+            <div class="myBio">
+                <mat-card>
+                    <mat-card-content><span class="sideCharArrow">&#8618;</span><span class="field">Name: </span>Priyanshu Negi</mat-card-content>
+                </mat-card>
             </div>
             </div>
+        </div>
+        <div class="skills">
+            <mat-chip-listbox class="chipss" aria-label="My Skills" *ngFor="let skill of skillArray">
+                <mat-chip-option>{{skill}}</mat-chip-option>
+              </mat-chip-listbox>
         </div>
     </mat-card-content>
     <mat-card-actions>

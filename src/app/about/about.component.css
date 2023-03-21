@@ -37,10 +37,13 @@ mat-card-subtitle{
  .infor{
   margin-left: 20px;
  }
+ img{
+  border-radius: 5%;
+ }
   h1{
 
     font-weight: bolder;
-    color: #18d26e;
+    /* color: #18d26e; */
   }
   .mySelf{
     font-family: Great Vibes;
@@ -53,7 +56,10 @@ mat-card-subtitle{
   }
   .chipss{
     margin-right: 10px;
-  
+  }
+  .sideCharArrow{
+    font-size:30px; margin-right: 4px; color: #7b1fa2;
+    font-weight: bolder;
   }
   @media only screen and (max-width: 767px) {
     .information {
