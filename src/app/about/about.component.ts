@@ -17,5 +17,24 @@ skillArray:any=mySkills.skills;
   const age = Math.round(diffInYears);
   return age;
 }
+typedText = '';
+
+ngOnInit(): void {
+  const text = "As an electrical engineering graduate turned full-stack web developer, my ambition is to merge my technical expertise with my creative drive to build impactful and innovative digital solutions.";
+  this.typeText(text);
+}
+
+typeText(text: string) {
+  let i = 0;
+  const intervalId = setInterval(() => {
+    if (i < text.length) {
+      this.typedText += text.charAt(i);
+      i++;
+    } else {
+      clearInterval(intervalId);
+    }
+  }, 50);
+}
+
 
 }
