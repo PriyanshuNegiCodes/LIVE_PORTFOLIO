@@ -23,6 +23,12 @@ export const myEdu={
             From: "G. B. Pant Institute of Technology",
             StartDate: "Aug-2013",
             EndDate: "June-2016" 
+        },
+        {
+            Course:"Class - 10th",
+            From: "Central Board of Secondary Education",
+            StartDate: "April-2012",
+            EndDate: "April-2013" 
         }
     ]
 }
