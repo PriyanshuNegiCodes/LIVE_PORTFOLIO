@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { myEdu } from '../myEducation';
 
 @Component({
   selector: 'app-resume',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent {
- hii:any
+ hii:any=myEdu.education;
 }

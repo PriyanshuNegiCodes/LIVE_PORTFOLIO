@@ -7,9 +7,15 @@
         <div>
             <mat-vertical-stepper linear>
                 <mat-step *ngFor="let hey of hii" [completed]="true">
-                  <ng-template matStepLabel>{{hey}}</ng-template>
+                  <ng-template matStepLabel>{{hey.Course}}</ng-template>
                   <ng-template matStepContent>
-                    <p></p>
+                    <div>
+                      {{hey.StartDate}}-{{hey.EndDate}}
+                      <div>
+                        {{hey.From}}
+                      </div>
+
+                    </div>
                   </ng-template>
                 </mat-step>
               </mat-vertical-stepper>
