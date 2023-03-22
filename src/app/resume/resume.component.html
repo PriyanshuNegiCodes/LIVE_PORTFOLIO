@@ -1,1 +1,21 @@
-<p>resume works!</p>
+<mat-card class="contact">
+    <mat-card-header>
+      <mat-card-title><h1 class="line">CHECK MY RESUME</h1> <div class="line" id="orangeBlock"></div></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      
+        <div>
+            <mat-vertical-stepper linear>
+                <mat-step *ngFor="let hey of hii" [completed]="true">
+                  <ng-template matStepLabel>{{hey}}</ng-template>
+                  <ng-template matStepContent>
+                    <p></p>
+                  </ng-template>
+                </mat-step>
+              </mat-vertical-stepper>
+        </div>
+        
+    </mat-card-content>
+    <mat-card-actions>
+    </mat-card-actions>
+  </mat-card>

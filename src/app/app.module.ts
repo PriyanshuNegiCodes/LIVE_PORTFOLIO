@@ -29,6 +29,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import {MatStepperModule} from '@angular/material/stepper';
 
 
 
@@ -64,7 +65,8 @@ import { MatListModule } from '@angular/material/list';
     MatSelectModule,
     LayoutModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatStepperModule
 
   ],
   providers: [],
