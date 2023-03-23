@@ -2,7 +2,7 @@ export const myJob={
     jobs:[
         {
             Company:"Currently Looking for opportunity for the profile of Full stack web developer",
-            From: "Preference: PAN INDIA",
+            From: "PAN INDIA",
             StartDate: "May-2023",
             EndDate: "Present Date",
         },
