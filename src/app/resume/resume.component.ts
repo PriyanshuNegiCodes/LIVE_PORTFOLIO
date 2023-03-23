@@ -9,4 +9,13 @@ import { myJob } from '../myJobs';
 export class ResumeComponent {
  hii:any=myEdu.education;
  hey: any=myJob.jobs;
+primary: any;
+chip: any;
+
+imageUrl:any="";
+
+imageSend(data:any){
+  alert("ara hai ")
+  this.imageUrl= data.Course
+}
 }

@@ -49,9 +49,7 @@ mat-card-subtitle{
   .oneSection{
     width: 45%;
   }
-  .label{
-
-  }
+ 
 
 
   ::ng-deep .mat-step-header .mat-step-icon {
@@ -59,7 +57,40 @@ mat-card-subtitle{
   }
   .mySign{
     margin-left: 10px;
+    white-space: pre-wrap;
+    font-weight: 500;
+    color: #b3e5fc;
   }
-  .state{
-    font-size: 20px;
+.fromDiv{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+  .from{
+ 
+    font-weight: 500;
+    color: #b3e5fc;
+    font-size: 18px;
+  }
+
+  .fromData{
+    margin-left: 13px;
+    margin-top: 13px;
+    color: b39ddb;
+    font-size: 17px;
+    font-weight: 300;
+  }
+
+  .DateImage{
+    margin: auto; 
+
+  }
+  .DateImage img{
+    width: 80%;
+    height: 40%; 
+  }
+
+  @media only screen and (max-width: 767px) {
+    .oneSection{
+      width: 100%;
+    }
   }

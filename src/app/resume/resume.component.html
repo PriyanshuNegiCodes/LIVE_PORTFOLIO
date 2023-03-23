@@ -7,15 +7,19 @@
         <div class="oneSection">
           <h2>Educational Qualification</h2>
             <mat-vertical-stepper linear displayDefaultIndicatorType="false" >
-                <mat-step *ngFor="let hey of hii" [completed]="true" >
+                <mat-step *ngFor="let hey of hii" [completed]="true" (mouseover)="imageSend(hey)" >
                   <ng-template class="label " matStepLabel> 
                     <i class="fa fa-circle" style="font-size:20px; color:#7b1fa2"></i>
                     <span class="mySign">{{hey.Course}}</span> </ng-template>
                   <ng-template matStepContent>
                     <div>
-                      {{hey.StartDate}} to {{hey.EndDate}}
-                      <div>
-                        {{hey.From}}
+                      <mat-chip-listbox class="mat-mdc-chip-set-stacked">
+                        <mat-chip-option >
+                          {{hey.StartDate}} to {{hey.EndDate}}
+                      </mat-chip-option>
+                      </mat-chip-listbox>
+                      <div class="fromDiv"> <span class="from">From:</span>
+                        <span class="fromData">{{hey.From}}</span>
                       </div>
 
                     </div>
@@ -25,16 +29,21 @@
         </div>
         <div class="oneSection">
           <h2>Professional Experience</h2>
-          <mat-vertical-stepper linear displayDefaultIndicatorType="false" >
+          <mat-vertical-stepper linear displayDefaultIndicatorType="false"  >
             <mat-step *ngFor="let hey of hey" [completed]="true" >
               <ng-template class="label " matStepLabel> 
                 <i class="fa fa-circle" style="font-size:20px; color:#7b1fa2"></i>
                 <span class="mySign">{{hey.Company}}</span> </ng-template>
               <ng-template matStepContent>
                 <div>
-                  {{hey.StartDate}} to {{hey.EndDate}}
-                  <div>
-                    {{hey.From}}
+                  
+                  <mat-chip-listbox class="mat-mdc-chip-set-stacked " color="primary">
+                    <mat-chip-option >
+                      {{hey.StartDate}} to {{hey.EndDate}}
+                  </mat-chip-option>
+                  </mat-chip-listbox>
+                  <div class="fromDiv"><span class="from">From:</span>
+                    <span class="fromData">{{hey.From}}</span>
                   </div>
 
                 </div>
@@ -42,52 +51,13 @@
             </mat-step>
           </mat-vertical-stepper>
         </div>
+        <mat-card class="DateImage">
+          <mat-card-content>
+            {{imageUrl}}
+          </mat-card-content>
+        </mat-card>
         
     </mat-card-content>
     <mat-card-actions>
     </mat-card-actions>
   </mat-card>
-
-  <!--   <mat-vertical-stepper linear displayDefaultIndicatorType="false">
-              <mat-step   [completed]="true">
-                <ng-template matStepLabel>
-         
-                  <i class="fa fa-circle" style="font-size:20px; color:#7b1fa2"></i>
-                  <div>
-                    Currently Looking for Oppurtunity for the profile of Full stack web developer
-                  </div>
-                 
-                </ng-template>
-                <ng-template matStepContent>
-                  <div>
-                    Since, May 2023
-                  </div>
-                </ng-template>
-              </mat-step>
-            </mat-vertical-stepper>
-            <mat-vertical-stepper>
-
-                <mat-step   [completed]="true">
-                  <ng-template matStepLabel>
-           
-                    <i class="fa fa-circle" style="font-size:20px; color:#7b1fa2"></i>
-
-                    <div>
-                      Quality Analyst (Content)
-                    </div>
-                  </ng-template>
-                  <ng-template matStepContent>
-                    <div>
-                      2019-June to November-2022 
-                      <div>
-                        Acadecraft Private Limited, H-54, H Block, Sector 63, Noida, Uttar Pradesh 201301
-                      </div>
-                      <ul>
-                        <li>Team Management, Interpersonal Skills, Analytical Skills</li>
-                        <li>Subject Matter Expert, Content Quality Assurance</li>
-                        <li>Technical Blog Writing, E learning, MicroSoft-Office</li>
-                      </ul>
-                    </div>
-                  </ng-template>
-                </mat-step>
-              </mat-vertical-stepper> -->
