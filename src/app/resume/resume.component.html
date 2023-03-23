@@ -7,10 +7,10 @@
         <div class="oneSection">
           <h2>Educational Qualification</h2>
             <mat-vertical-stepper linear displayDefaultIndicatorType="false" >
-                <mat-step *ngFor="let hey of hii" [completed]="true" (mouseover)="imageSend(hey)" >
+                <mat-step *ngFor="let hey of hii" [completed]="true"  >
                   <ng-template class="label " matStepLabel> 
                     <i class="fa fa-circle" style="font-size:20px; color:#7b1fa2"></i>
-                    <span class="mySign">{{hey.Course}}</span> </ng-template>
+                    <span class="mySign" (mouseover)="imageSend(hey.imageData)">{{hey.Course}}</span> </ng-template>
                   <ng-template matStepContent>
                     <div>
                       <mat-chip-listbox class="mat-mdc-chip-set-stacked">
@@ -53,7 +53,7 @@
         </div>
         <mat-card class="DateImage">
           <mat-card-content>
-            {{imageUrl}}
+            <img src="{{fetchData}}" alt="">
           </mat-card-content>
         </mat-card>
         

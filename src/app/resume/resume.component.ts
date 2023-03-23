@@ -12,10 +12,9 @@ export class ResumeComponent {
 primary: any;
 chip: any;
 
-imageUrl:any="";
+fetchData:any="";
 
-imageSend(data:any){
-  alert("ara hai ")
-  this.imageUrl= data.Course
+imageSend(data: any) {
+  this.fetchData =data;
 }
 }
