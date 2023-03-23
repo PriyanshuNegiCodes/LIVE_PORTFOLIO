@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { myEdu } from '../myEducation';
-
+import { myJob } from '../myJobs';
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
@@ -8,4 +8,5 @@ import { myEdu } from '../myEducation';
 })
 export class ResumeComponent {
  hii:any=myEdu.education;
+ hey: any=myJob.jobs;
 }

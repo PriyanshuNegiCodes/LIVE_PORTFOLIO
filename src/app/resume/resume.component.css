@@ -12,7 +12,9 @@ mat-card-header{
 h1{
     color: whitesmoke;
 }
-
+.heading{
+  font-size: 50px;
+}
 mat-card-subtitle{
     color: azure;
     font-size: 50px;
@@ -36,4 +38,28 @@ mat-card-subtitle{
   
   .mat-mdc-form-field {
     margin-top: 16px;
+  }
+
+  mat-card-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .oneSection{
+    width: 45%;
+  }
+  .label{
+
+  }
+
+
+  ::ng-deep .mat-step-header .mat-step-icon {
+    display: none;
+  }
+  .mySign{
+    margin-left: 10px;
+  }
+  .state{
+    font-size: 20px;
   }
