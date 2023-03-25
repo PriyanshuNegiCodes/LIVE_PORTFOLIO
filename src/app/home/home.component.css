@@ -1,0 +1,26 @@
+.back{
+    background-image: url('src/assets/wallpaper.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img {
+    margin-top: -200px;
+    width: 250px;
+    height: 350px;
+    border-radius: 50%;
+   
+  }
+
+.mySelf{
+    font-family: Great Vibes;
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  
+  
