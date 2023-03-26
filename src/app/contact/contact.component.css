@@ -27,7 +27,7 @@ mat-card-subtitle{
     margin-bottom: 5px;
     width: 100px;
     height: 5px;
-    background-color: #7b1fa2;
+    background-color: #523059;
   }
 
   .Data-title{
@@ -51,7 +51,7 @@ mat-card-subtitle{
   margin-right: 30px;
 }
 .socialIcons i:hover {
-  color:  #7b1fa2;
+  color:  #523059;
 }
 
 @media only screen and (max-width: 767px) {

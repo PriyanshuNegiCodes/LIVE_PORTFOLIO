@@ -28,7 +28,7 @@ mat-card-subtitle{
     margin-bottom: 5px;
     width: 226px;
     height: 5px;
-    background-color: #7b1fa2;
+    background-color: #523059;
   }
 
   .information{
@@ -72,7 +72,7 @@ mat-card-subtitle{
   }
 
   .sideCharArrow{
-    font-size:30px; margin-right: 4px; color: #7b1fa2;
+    font-size:30px; margin-right: 4px; color: #523059;
     font-weight: bolder;
   }
 

@@ -14,6 +14,7 @@ h1{
 }
 .heading{
   font-size: 50px;
+  line-height: 1;
 }
 mat-card-subtitle{
     color: azure;
@@ -29,7 +30,7 @@ mat-card-subtitle{
     margin-bottom: 5px;
     width: 100px;
     height: 5px;
-    background-color: #7b1fa2;
+    background-color: #523059;
   }
 
   .mat-stepper-vertical {
@@ -59,7 +60,7 @@ mat-card-subtitle{
     margin-left: 10px;
     white-space: pre-wrap;
     font-weight: 500;
-    color: #b3e5fc;
+    color: whitesmoke;
   }
 .fromDiv{
   margin-left: 10px;
@@ -68,7 +69,7 @@ mat-card-subtitle{
   .from{
  
     font-weight: 500;
-    color: #b3e5fc;
+    color: whitesmoke;
     font-size: 18px;
   }
 
