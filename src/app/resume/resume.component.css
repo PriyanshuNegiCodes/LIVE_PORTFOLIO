@@ -12,6 +12,11 @@ mat-card-header{
 h1{
     color: whitesmoke;
 }
+h2{
+  font-size: 31px;
+  font-family: Alkatra;
+  color: #de6c15;
+}
 .heading{
   font-size: 50px;
   line-height: 1;
@@ -46,6 +51,11 @@ mat-card-subtitle{
     flex-direction: row;
     flex-wrap: wrap;
   }
+  element.style {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: cursive;
+  }
 
   .oneSection{
     width: 45%;
@@ -61,6 +71,8 @@ mat-card-subtitle{
     white-space: pre-wrap;
     font-weight: 500;
     color: whitesmoke;
+    font-size: 22px;
+    font-family: 'circular';
   }
 .fromDiv{
   margin-left: 10px;
