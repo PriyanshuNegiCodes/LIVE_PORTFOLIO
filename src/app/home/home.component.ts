@@ -9,7 +9,7 @@ import { mySkills } from '../mySkills';
 export class HomeComponent implements OnInit {
 
   typedText = '';
-  currentSkill='';
+  currentSkill='coding';
   skills = mySkills.skills;
   currentSkillIndex = 0;
 
@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
       } else {
         this.currentSkillIndex = 0;
       }
-    }, 2000);
+    }, 1000);
   }
 
   typeText(text: string) {
