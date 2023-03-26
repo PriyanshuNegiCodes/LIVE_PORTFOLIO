@@ -24,6 +24,7 @@
   background: inherit;
 }
 mat-toolbar{
+  z-index: 5;
   background-color: #523059;
 }
 .mat-toolbar.mat-primary {
