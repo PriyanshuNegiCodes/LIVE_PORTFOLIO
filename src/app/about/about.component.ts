@@ -20,9 +20,9 @@ skillArray:any=mySkills.skills;
 typedText = '';
 
 ngOnInit(): void {
-  const text = "As an electrical engineering graduate turned full-stack web developer, my ambition is to merge my technical expertise with my creative drive to build impactful and innovative digital solutions.";
+ const text = "As an electrical engineering graduate turned full-stack web developer, my ambition is to merge my technical expertise with my creative drive to build impactful and innovative digital solutions.";
   this.typeText(text);
-}
+} 
 
 typeText(text: string) {
   let i = 0;

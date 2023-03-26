@@ -10,7 +10,7 @@
     flex-direction: column;
 }
 img {
-    margin-top: -200px;
+    margin-top: -150px;
     width: 250px;
     height: 350px;
     border-radius: 50%;
@@ -18,9 +18,20 @@ img {
   }
 
 .mySelf{
+    margin-top: 6px;
     font-family: Great Vibes;
     font-size: 40px;
     letter-spacing: 2px;
   }
-  
-  
+
+.qualy{
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 35px;
+}
+
+.eachSkill{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+  }
