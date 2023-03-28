@@ -1,9 +1,16 @@
+.back{
+  background-image: url(../../assets/mainWallpaper.jpg);
+  background-size: cover;
+
+}
 .contact{
     margin-top: 4%;
     margin-left: 10%;
     margin-right: 10%;
     max-width: 80vw;
+    margin-bottom: 8%;
 }
+
 mat-card-header{
     display: flex;
     flex-wrap: wrap;
@@ -89,8 +96,8 @@ mat-card-subtitle{
     margin-left: 13px;
     margin-top: 13px;
     color: b39ddb;
-    font-size: 17px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   .DateImage{

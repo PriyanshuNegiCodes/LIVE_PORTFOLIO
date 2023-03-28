@@ -1,3 +1,9 @@
+.back{
+  background-image: url(../../assets/mainWallpaper.jpg);
+  background-size: cover;
+
+}
+
 .contact{
     margin-top: 4%;
     margin-left: 10%;

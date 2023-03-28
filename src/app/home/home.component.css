@@ -10,9 +10,9 @@
     flex-direction: column;
 }
 img {
-    margin-top: 0px;
+    margin-top: -55px;
     width: 250px;
-    height: 350px;
+    height: 300px;
     border-radius: 50%;
     z-index: 0;
    
@@ -29,6 +29,8 @@ img {
     margin-top: 20px;
     font-family: Roboto;
     font-size: 35px;
+    line-height: 1;
+
 }
 
 .eachSkill{
@@ -37,3 +39,11 @@ img {
     height: 100px;
   }
   
+  @media only screen and (max-width: 767px) {
+    .qualy{
+     
+      margin-left: 70px;
+    
+  }
+
+  }
