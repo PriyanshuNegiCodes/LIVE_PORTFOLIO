@@ -13,6 +13,8 @@ export const mySkills = {
       { id: 10, name: "MATERIALUI" },
       { id: 11, name: "GITHUB" },
       { id: 12, name: "VSC" },
-      { id: 13, name: "INTELLIJ" }
+      { id: 13, name: "INTELLIJ" },
+      { id: 14, name: "SPRINGBOOT" },
+      { id: 13, name: "DOCKER" }
     ]
   };

@@ -9,14 +9,14 @@ import { mySkills } from '../mySkills';
 export class AboutComponent {
 
 skillArray:any=mySkills.skills;
- getAge() {
-  const birthDate = new Date('1998-06-23');
-  const currentDate = new Date();
-  const diffInMs = currentDate.getTime() - birthDate.getTime();
-  const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
-  const age = Math.round(diffInYears);
-  return age;
-}
+//  getAge() {
+//   const birthDate = new Date('1998-06-23');
+//   const currentDate = new Date();
+//   const diffInMs = currentDate.getTime() - birthDate.getTime();
+//   const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365.25);
+//   const age = Math.round(diffInYears);
+//   return age;
+// }
 typedText = '';
 
 ngOnInit(): void {
